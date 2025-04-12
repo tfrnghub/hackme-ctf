@@ -40,9 +40,9 @@ foremost meow.png
 
 得到一张图片`00000000.png`和一个加密的压缩文件`00000094.zip`。压缩文件包含`flag`文件以及`png`图片。
 
-![](.\截图\04_01.PNG)
+![](img/04_01.PNG)
 
-![](.\截图\04_02.PNG)
+![](img/04_02.PNG)
 
 对比`00000000.png`和压缩文件中图片的`crc`值相同。
 
@@ -287,11 +287,11 @@ write up：
 
 题目给的图片：
 
-![](截图\Miku_Hatsune.png)
+![](img/Miku_Hatsune.png)
 
 网上的原图：
 
-![](截图\Miku_Hatsune_orgin.png)
+![](img/Miku_Hatsune_orgin.png)
 
 ##### ##StegSolve
 
@@ -374,7 +374,7 @@ MASK_MODES = {
 
 修改`rgb_mask`，图片能正常打开，可以看到像素排列很奇怪，跟没对齐一样。
 
-![](.\截图\new_buzzing.bmp)
+![](img/new_buzzing.bmp)
 
 ```python
 import struct
@@ -2486,7 +2486,7 @@ print(patt1.findall(r.text))
 
 ##### ##MODE_OFB
 
-![](.\截图\OFB-1.jpg)
+![](img/OFB-1.jpg)
 
 write up：
 
