@@ -342,13 +342,13 @@ OSError: Unsupported BMP bitfields layout
 
 `file_info`：
 
-```json
+```
 {'header_size': 124, 'direction': -1, 'y_flip': False, 'width': 371, 'height': 377, 'planes': 1, 'bits': 32, 'compression': 3, 'data_size': 1024000, 'pixels_per_meter': (2835, 2835), 'colors': 4294967296, 'palette_padding': 4, 'r_mask': 1090519040, 'g_mask': 4259840, 'b_mask': 16640, 'a_mask': 65, 'rgb_mask': (1090519040, 4259840, 16640), 'rgba_mask': (1090519040, 4259840, 16640, 65)}
 ```
 
 `SUPPORTED`：
 
-```json
+```
 SUPPORTED = {
                 32: [
                     (0xFF0000, 0xFF00, 0xFF, 0x0),
@@ -693,6 +693,8 @@ if($_POST['user'] === 'admin' && md5($_POST['pass']) === 'bed128365216c019988915
 #### 18 Web    homepage
 
 提示`Where is the flag? Did you check the code?`。检查页面的`js`代码，找到`cute.js`，是`aaencode`。浏览器F12，代码放在`console`口中运行得到一个二维码。扫码后拿到`FLAG`。
+
+### Reversing
 
 #### 55 Reversing    esrever-mv
 
@@ -1161,6 +1163,8 @@ int main()
     return 0;
 }
 ```
+
+### Pwn
 
 #### 58 Pwn    catflag
 
@@ -2022,6 +2026,8 @@ exit_bucket()
 p.sendline(b"ls")
 p.interactive()
 ```
+
+### Crypto
 
 #### 82 Crypto    easy
 
@@ -3194,6 +3200,8 @@ flag2=digits(flag2,16)
 print(binascii.unhexlify(flag2))
 ```
 
+### Programming
+
 #### 98 Programming    fast
 
 ```python
@@ -3233,6 +3241,8 @@ print(p.recv())
 p.close()
 ```
 
+### Lucky
+
 #### 99 Lucky    you-guess
 
 爆破字典，猜口令。根据`'%s really hates her ex.' % password`，选择一个女性用户名的字典。
@@ -3269,6 +3279,8 @@ while True:
         break
 f.close()
 ```
+
+### Forensic
 
 #### 100 Forensic    easy pdf
 
